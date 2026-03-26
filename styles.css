@@ -17,7 +17,7 @@ article {
     overflow: hidden;
     flex-shrink: 0;
     transition: 0.5s;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
     article {
         width: 80%;
     }
