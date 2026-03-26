@@ -5,92 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi lista de novelas</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+    <nav>
+        <button id="boton-menu">☰</button>
+        <ul class="menu">
+            <p>Explorar Géneros</p>
+            <button data-genero="todos">Todos</button>
+            <button data-genero="accion">Acción</button>
+              <button data-genero="romance">Romance</button>
+                <button data-genero="fantasia">Fantasía</button>
+                    <button data-genero="psicologico">Psicológico</button>
+                        <button data-genero="comedia">Comedia</button>
+        </ul>
+    </nav>
     <main>
         <section class="tarjetas">
-            <article class="tarjeta"> 
+             <article class="tarjeta" data-genero="fantasia psicologico">
                 <img src="LOTM cover.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>Señor de los Misterios</h1>
+                    <h3 class="tarjeta-titulo">El señor de los misterios</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://www.skynovels.net/novelas/1/el-senor-de-los-misterios">Novela🡥 </a></p>
                     <p><strong>Reseña:</strong> Lo único que tengo para decir es que es cine carajo.</p>
                 </div>
             </article>
-            <article class="tarjeta"> 
+                <article class="tarjeta" data-genero="romance accion fantasia">
                 <img src="the earth is online cover.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>La Tierra está en línea</h1>
+                     <h3 class="tarjeta-titulo">La tierra está en línea</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://www.webnovel.com/es/book/27127675205496405">Novela🡥 </a></p>
                     <p><strong>Reseña:</strong> Empieza lento pero me gusta el ritmo que lleva,no hacen lore drop de una.El romance es casi secundario pero la relación me gustó mucho.</p>
                 </div>
             </article>
-             <article class="tarjeta"> 
+             <article class="tarjeta" data-genero="fantasia psicologico comedia">
                 <img src="ORV novel cov.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>Punto de vista del lector omnisciente</h1>
+                     <h3 class="tarjeta-titulo">Punto de vista del lector omnisciente</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://novel.munpia.com/104753">Novela🡥 </a><a href="https://www.webtoons.com/es/fantasy/omniscient-reader/list?title_no=2208">Webtoon🡥 </a></p>
                     <p><strong>Reseña:</strong> Las palabras no me alcanzan para expresar lo mucho que me encanta esta novela.Me siento honrada de que haya sido mi primera novela.</p>
                 </div>
             </article>
-             <article class="tarjeta"> 
+              <article class="tarjeta" data-genero="fantasia comedia accion">
                 <img src="TCF novel cover.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>La basura de la familia del conde</h1>
+                     <h3 class="tarjeta-titulo">La basura de la familia del conde</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://www.webnovel.com/es/book/trash-of-the-count's-family_26205219405391905">Novela🡥 </a><a href="https://www.webtoons.com/es/fantasy/la-basura-de-la-familia-del-conde/list?title_no=6081">Webtoon🡥 </a></p>
-                    <p><strong>Reseña:</strong> Me encantó.Trata sobre muchos temas políticos en los primeros 200 y pico de capítulos pero ni siquiera me importó jaja.Mantiene el ritmo,la acción y la intriga muy bien.</p>
+                    <p><strong>Reseña:</strong> Me encantó.Mantiene el ritmo,la acción y la intriga muy bien.</p>
                 </div>
             </article>
-              <article class="tarjeta"> 
+              <article class="tarjeta" data-genero="fantasia accion">
                 <img src="TWATF novel cov.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>El mundo después del fin</h1>
+                     <h3 class="tarjeta-titulo">El mundo después del fin</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://nextnovels.com/the-world-after-the-fall-novela-web-en-espanol/">Novela🡥 </a><a href="https://www.webtoons.com/es/fantasy/the-world-after-the-fall/list?title_no=9196">Webtoon🡥 </a></p>
                     <p><strong>Reseña:</strong> En comparación con otras novelas que he leído,siento que la historia va a paso de tortuga.Si ignoramos eso,la novela es genial.</p>
                 </div>
             </article>
-              <article class="tarjeta"> 
+              <article class="tarjeta" data-genero="romance psicologico"> 
                 <img src="classmate coverr.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>Compañero de clase</h1>
+                     <h3 class="tarjeta-titulo">Compañero de clase</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://manhwaweb.com/manhwa/compaero-de-clase_1757651937528">Manhwa🡥</a></p>
                     <p><strong>Reseña:</strong> Aunque no tiene tantos capítulos la historia es muy entretenida e interesante.</p>
                 </div>
             </article>
-             <article class="tarjeta"> 
+              <article class="tarjeta" data-genero="accion romance">
                 <img src="Turning cover.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>Turning</h1>
+                    <h3 class="tarjeta-titulo">Turning</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://www.lezhin.es/detail/turning">Manhwa🡥</a><a href="https://www.novelupdates.com/series/turning/">Novela🡥 </a></p>
                     <p><strong>Reseña:</strong>No se centra tanto en el romance,sino más bien en la acción pero eso es un punto a favor para mi.</p>
                 </div>
             </article>
-             <article class="tarjeta"> 
+              <article class="tarjeta" data-genero="romance">
                 <img src="DTR cover.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>Define la relación</h1>
+                     <h3 class="tarjeta-titulo">Define la Relación</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://www.lezhin.es/detail/define-the-relationship">Manhwa🡥</a><a href=https://es.scribd.com/document/837712957/NOVELA-COMPLETA-DEFINE-LA-RELACION">Novela🡥 </a></p>
                     <p><strong>Reseña:</strong>El mejor manhwa que he leído.El romance,la trama, todo es increíble.</p>
                 </div>
             </article>
-             <article class="tarjeta"> 
+              <article class="tarjeta" data-genero="romance fantasia">
                 <img src="KAMISAMA cover.jpg" alt="Portada de la novela">
                 <div class="contenido">
-                    <h1>Kamisama no uroko</h1>
+                    <h3 class="tarjeta-titulo">Kamisama no uroko</h3>
                     <p><strong>Estrellas:</strong> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                     <p><strong>Sitio:</strong> <a href="https://es.novelcool.com/chapter/Cap-tulo-1/3150908/">Manhwa🡥</a></p>
-                    <p><strong>Reseña:</strong>Es corto pero me encanta.No hay mucha trama pero el romance es lindo</p>
+                    <p><strong>Reseña:</strong>Es corto pero me encanta.No hay mucha trama pero el romance es lindo.</p>
                 </div>
             </article>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </html>

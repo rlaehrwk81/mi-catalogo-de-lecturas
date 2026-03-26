@@ -9,16 +9,90 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
+    width: 14%;
     background-color: rgb(45, 46, 46);
     border-radius: 10%;
     padding: 1%;
-    height: 550px;
+    height: 450px;
     overflow: hidden;
+    flex-shrink: 0;
+    transition: 0.5s;
 }
 section {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 5%;
+}
+article:hover {
+    transform: scale(1.05);
+}
+.menu {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: rgb(117, 119, 231);
+    font-size: 22px;
+    font-family:"Montserrat", sans-serif;
+}
+.menu-active {
+    transition: 0.3s;
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+    transform: translateY(0);
+}
+.menu-filtros {
+   opacity: 0;
+   visibility: hidden;
+    transition: all 0.5s ease;
+}
+#boton-menu {
+    background-color: transparent;
+    border-radius: 10%;
+    color: rgba(209, 209, 209, 0.658);
+    font-size: 24px;
+    cursor: pointer;
+}
+button{
+    gap: 10px;
+    border-radius: 50%;
+    color: rgb(255, 253, 253);
+    border: 2px solid rgb(7, 7, 7);
+    background-color: rgb(43, 43, 44);
+      font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    padding: 15px;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(1.0);
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(107, 106, 106, 0.616);
+}
+.tarjeta h3 {
+    min-height: 3rem;
+}
+.hidden {
+    display: none;
+}
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.fa-star {
+    color: gold;
 }
