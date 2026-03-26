@@ -17,12 +17,15 @@ article {
     overflow: hidden;
     flex-shrink: 0;
     transition: 0.5s;
-    @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
     article {
         width: 80%;
+        height: auto;
     }
 }
-}
+
 section {
     display: flex;
     flex-direction: row;
